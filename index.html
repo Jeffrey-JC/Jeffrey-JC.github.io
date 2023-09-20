@@ -1,369 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Portfolio Website-Jeffrey</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio Website Design | Codehal</title>
 
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/03db6e026a.js" crossorigin="anonymous"></script>
-  <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-    <div class="container">
-      <a class="navbar-brand" href="#">Jeffrey</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="images/Resume - Jeffrey Contreras.pdf" target="_blank">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-  
-      </div>
-    </div>
-  </nav>
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <!-- main banner -->
-  <section class="bgimage" id="home">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-          <h2 class="hero_title">Hi, I'm Jeffrey</h2>
-          <p class="hero_desc">I am a Computer Engineering graduate student at Florida International University</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <!-- about section-->
-  <section id="about">
-    <div class="container mt-4 pt-4">
-      <h1 class="text-center">About Me</h1>
-      <div class="row mt-4">
-        <div class="col-lg-4">
-          <img src="images/proHeadshot.jpg" class="imageAboutPage" alt="">
-        </div>
-        <div class="col-lg-8">
-          <p> I'm studying Computer Engineering at Florida International University. I completed my Bachelor's of Science degree in
-          Computer Engineering and will pursue my Master's of Science degree in Computer Engineering. I was exposed to tech when I
-          received my first iPod. At the time, I was confused as to how it works and what it does. After some time, I've gotten
-          used to its features and saw how fascinating technology was. My interest in tech further developed when I saw other
-          inventions like holograms, a flying drone, and a Raspberry Pi. Growing up, I wanted to learn how to develop technology
-          that benefits society.
-          </p>
-          <div class="row mt-3">
-            <div class="col-md-6">
-              <ul>
-                <li>Name: Jeffrey Contreras</li>
-                <li>Age: 23</li>
-              </ul>
-            </div>
-            <!--
-            <div class="col-md-6">
-              <ul>
-                <li>Name: David Parker</li>
-                <li>Age: 28</li>
-                <li>Occupation: Web Developer</li>
-  
-              </ul>
-            </div>
-          -->
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Jeffrey Contreras</h1>
+        <h3>And I'm <span class="multiple-text"></span></h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi
+          aspernatur placeat architecto amet laudantium id.</p>
+          <div class="social-media">
+            <a href="https://github.com/Jeffrey-JC"><i class='bx bxl-github'></i></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.linkedin.com/in/jeffreycontreras059/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
           </div>
-          <div class="row mt-3">
-            <p>During my free time, I enjoy exercising, playing video games, and watching TV shows. I also aim to
-              improve my tech skills in other areas such as cybersecurity and front-end development.
-              <div class="row mt-3">
-                <div class="col-md-6">
-                  <ul>
-                    <li>Favorite exercise: Running</li>
-                    <li>Favorite video game: Valorant</li>
-                    <li>Favorite TV show: Impractical Jokers</li>
-                  </ul>
-                </div>
-              </div>
-            </p>
-          </div>
+          <a href="media/Jeffrey_Contreras_Resume.pdf" target="_blank" class="btn">Download Resume</a>
+        </p>
+      </div>
+      <div class="home-img">
+        <img src="images/proHeadshot.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/ProfessionalHeadshot.jpg" alt="">
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Security Ethusiast!</h3>
+        <p>I am a graduate student currently studying for a Master's degree in Computer Engineering.
+          I am a security ethusiast with programming experience, such as Python, C++, C, PowerShell, and SQL.
+          My current plans are to enter the workforce for a cybersecurity role and study for a PhD
+          specializing in cybersecurity.
+        </p>
+          <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Tech Interests</span></h2>
+      
+      <div class="services-container">
+        <div class="services-box">
+          <i class='bx bx-code-alt'></i>
+          <h3>Cybersecurity</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veniam voluptatibus dolorum, deleniti at quas hic nihil voluptatum laboriosam velit.</p>
+          <a href="" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bxs-paint' ></i>
+          <h3>Software Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veniam voluptatibus dolorum, deleniti at quas hic nihil voluptatum laboriosam velit.</p>
+          <a href="" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bx-bar-chart-alt' ></i>
+          <h3>Web Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veniam voluptatibus dolorum, deleniti at quas hic nihil voluptatum laboriosam velit.</p>
+          <a href="" class="btn">Read More</a>
         </div>
       </div>
-      <p>You can view my resume <a href="images/Resume - Jeffrey Contreras.pdf" target="_blank">here</a></p>
-  </section>
+    </section>
 
-  <!-- services section-->
-  <section id="services">
-    <div class="container">
-      <h1 class="text-center">Tech Interests</h1>
-      <div class="row">
-        <div class="col-lg-4 mt-4">
-          <div class="card servicesText">
-            <div class="card-body">
-              <i class="fas servicesIcon fa-solid fa-mug-saucer"></i>
-              <h4 class="card-title mt-3">Software Development</h4>
-              <p class="card-text mt-3">Began studying software development since freshman year (2018) at university.
-                Experienced in using Java, C++, C, Python, and SQL.
-              </p>
-            </div>
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/portfolio1.jpg" alt="">
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, sequi?</p>
+            <a href="#"><i class='bx bx-link-external' ></i></a>
           </div>
         </div>
-        <div class="col-lg-4 mt-4">
-          <div class="card servicesText">
-            <div class="card-body">
-              <i class="fas servicesIcon fa-microchip"></i>
-              <h4 class="card-title mt-3">Hardware Development</h4>
-              <p class="card-text mt-3">Began studying hardware development since freshman year (2018) at university.
-                Utilized C, C++, and Python to develop hardware projects, such as Simon Says and System Lockdown. Experienced in
-                using Arduino, ESP32, ESP8266, Raspberry Pi, and Zybo-Z7 FPGA board.
-              </p>
-            </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio2.jpg" alt="">
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, sequi?</p>
+            <a href="#"><i class='bx bx-link-external' ></i></a>
           </div>
         </div>
-        <div class="col-lg-4 mt-4">
-          <div class="card servicesText">
-            <div class="card-body">
-              <i class="fas servicesIcon fa-solid fa-bug"></i>
-              <h4 class="card-title mt-3">Cybersecurity</h4>
-              <p class="card-text mt-3">Began studying as a hobby since junior year (2020) at university.
-                Experienced in concepts such as Reconnaissance, Footprinting, Network Scanning, System Hacking, Social Engineering,
-                and FireWalls.
-              </p>
-            </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio3.jpg" alt="">
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, sequi?</p>
+            <a href="#"><i class='bx bx-link-external' ></i></a>
           </div>
         </div>
-        <div class="col-lg-4 mt-4">
-          <div class="card servicesText">
-            <div class="card-body">
-              <i class='fas servicesIcon fa-check-circle'></i>
-              <h4 class="card-title mt-3">Game Development</h4>
-              <p class="card-text mt-3">Began as a hobby since 2020. Experienced in using Unreal Engine.
-              </p>
-            </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio4.jpg" alt="">
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, sequi?</p>
+            <a href="#"><i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio5.jpg" alt="">
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, sequi?</p>
+            <a href="#"><i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio6.jpg" alt="">
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, sequi?</p>
+            <a href="#"><i class='bx bx-link-external' ></i></a>
           </div>
         </div>
       </div>
-      <!--
-      <div class="row">
-        <div class="col-lg-4 mt-4">
-          <div class="card servicesText">
-            <div class="card-body">
-              <i class='fas servicesIcon fa-search'></i>
-              <h4 class="card-title mt-3">Front-End Development</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email Address">
         </div>
-      -->
-      <!--
-        <div class="col-lg-4 mt-4">
-          <div class="card servicesText">
-            <div class="card-body">
-              <i class='fas servicesIcon fa-shield-alt'></i>
-              <h4 class="card-title mt-3">DevOps</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number">
+          <input type="text" placeholder="Email Subject">
         </div>
-      -->
-      <!--
-        <div class="col-lg-4 mt-4">
-          <div class="card servicesText">
-            <div class="card-body">
-              <i class='fas servicesIcon fa-wrench'></i>
-              <h4 class="card-title mt-3">QA</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Codehal | All Rights Reserved.</p>
       </div>
-    -->
-    </div>
-  </section>
 
-  <!-- portfolio section-->
-  <section id="portfolio">
-    <div class="container mt-3">
-      <h1 class="text-center">Portfolio</h1>
-      <div class="row">
-        <div class="col-lg-4 mt-4">
-          <div class="card">
-            <img class="card-img-top" src="images/IMG_0196.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Fire Extinguisher Robot</h4>
-              <p class="card-text">A robot that scans its envrionment for fires and extinguishes them with fire spray.
-              </p>
-              <div class="text-center">
-                <a href="https://github.com/Jeffrey-JC/FireExtinguisherRobot" target="_blank" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-4 mt-4">
-          <div class="card portfolioContent">
-            <img class="card-img-top" src="images/chatApp.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Mobile Chatting App</h4>
-              <p class="card-text">An iOS chatting app that allows users to communicate and send text and image messages in real time.</p>
-              <div class="text-center">
-                <a href="https://github.com/Jeffrey-JC/iOS_Mobile_Chatting_App" target="_blank" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-4 mt-4">
-          <div class="card portfolioContent">
-            <img class="card-img-top" src="images/seniorDesign.JPG" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Portable Photovoltaic Sensor Interface</h4>
-              <p class="card-text">A project consisting of a Raspberry Pi, solar cells, and INA219 current sensors that help test the efficiency of solar cells.</p>
-              <div class="text-center">
-                <a href="https://github.com/Jeffrey-JC/Senior-Design-Project" target="_blank" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
       </div>
-      <br>
-      <!--
-      <div class="row">
-        <div class="col-lg-4 mt-4">
-          <div class="card portfolioContent">
-            <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Coming Soon</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      -->
-        <!--
-        <div class="col-lg-4 mt-4">
-          <div class="card portfolioContent">
-            <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Twitter Clone</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-4 mt-4">
-          <div class="card portfolioContent">
-            <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Blog App</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    -->
-  </section>
+    </footer>
 
-  <!-- contact section-->
-  <section id="contact">
-    <div class="container mt-3 contactContent">
-      <h1 class="text-center">Contact Me</h1>
-  
-      <div class="row mt-4">
-        <!---
-        <div class="col-lg-6">-->
-          <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-          <!--<div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-            <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-              <iframe style="height:100%;width:100%;border:0;" frameborder="0"
-                src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-              </iframe>
-            </div>
-            <a class="googlemaps-html" href="https://www.embed-map.com"
-              id="get-data-forembedmap">https://www.embed-map.com</a>
-            <style>
-              #embedmap-canvas img {
-                max-width: none !important;
-                background: none !important;
-                font-size: inherit;
-                font-weight: inherit;
-              }
-            </style>
-          </div>
-        </div>-->
-  
-        <div class="col-lg-6">
-          <!-- form fields -->
-          <form>
-            <input type="text" class="form-control form-control-lg" placeholder="Name">
-            <input type="email" class="form-control mt-3" placeholder="Email">
-            <input type="text" class="form-control mt-3" placeholder="Subject">
-            <div class="mb-3 mt-3">
-              <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-            </div>
-          </form>
-          <button type="button" class="btn btn-success mt-3">Contact Me</button>
-  
-        </div>
-  
-      </div>
-    </div>
-  </section>
 
-<!-- footer section-->
-<footer id="footer">
-  <div class="container-fluid">
-    <!-- social media icons -->
-    <div class="social-icons mt-4">
-      <a href="https://github.com/Jeffrey-JC?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/jeffreycontreras059/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
-    </div>
-  </div>
-</footer>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-</head>
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-<body>
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
-</body>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
