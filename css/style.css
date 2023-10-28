@@ -190,6 +190,11 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.about-content ul {
+    font-size: 1.6rem;
+    list-style-position: inside;
+}
+
 .services h2 {
     margin-bottom: 5rem;
 }
