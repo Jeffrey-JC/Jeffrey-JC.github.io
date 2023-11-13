@@ -195,6 +195,21 @@ span {
     list-style-position: inside;
 }
 
+.experience-content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+
+.heading2 {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.experience-content1
+
 .services h2 {
     margin-bottom: 5rem;
 }
